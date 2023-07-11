@@ -102,7 +102,7 @@ def notifyDeployedVersion(String version) {
       to: "some-email@some-domain.com"
     )
 }
-
+#notify the status
 def notifyFailed() {
   emailext (
       subject: "FAILED: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]'",
